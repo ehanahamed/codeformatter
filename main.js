@@ -15,6 +15,10 @@ var codeFormatter = {
             }
         }
         return result;
+    },
+    debug: function (src) {
+        return acorn.tokenizer(src,
+            { "ecmaVersion": "6"})
     }
 }
 
