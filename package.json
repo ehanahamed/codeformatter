@@ -1,11 +1,8 @@
 {
-  "name": "temp",
+  "name": "codeformatter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A program that re-prints source code with consistent indentation, newlines, and stuff.",
   "main": "main.js",
-  "bin": {
-    "formaat": "cli.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

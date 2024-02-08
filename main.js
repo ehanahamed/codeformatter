@@ -1,10 +1,10 @@
 const acorn = require("acorn");
 
-var formaat = {
-    func: function () {
+var codeFormatter = {
+    func: function (src) {
         var result = [];
         var tokens = [...acorn.tokenizer(
-            "if ((1+1) == 2) { console.log(1 + 1); }",
+            src,
             { "ecmaVersion": "6"}
         )];
         for (var i = 0; i < tokens.length; i++) {
@@ -18,4 +18,4 @@ var formaat = {
     }
 }
 
-module.exports = formaat;
+module.exports = codeFormatter;
