@@ -1,7 +1,7 @@
 const codeFormatter = require("./main.js");
 
 //console.log(codeFormatter.func("var eee = \"idk\"; console.log(\"e\"); console.log(`${eee} e`"));
-console.log(codeFormatter.parse(
+console.log(codeFormatter.func(
     "// a single line comment\n" +
     "/*\n" +
     "    A multi-line\n" +

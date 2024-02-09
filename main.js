@@ -3,7 +3,7 @@ const acorn = require("acorn");
 var codeFormatter = {
     parse: function (src) {
         var result = [];
-        acorn.tokenizer(
+        acorn.parse(
             src,
             {
                 "ecmaVersion": "6",
@@ -18,22 +18,24 @@ var codeFormatter = {
                     });
                 }
             }
-        ).then( function () {
-            return result;
-        });
+        )
+        return result;
     },
     func: function (src) {
+        result = "";
         var tokens = codeFormatter.parse(src);
         for (var i = 0; i < tokens.length; i++) {
-            if (tokens[i].type.label === "string") {
-                result += `"${ tokens[i].value }"`;
-            } else if (tokens[i].type.label === "template") {
-                result += tokens[i].value;
-            } else {
-                if (tokens[i].value) { 
-                    result += (tokens[i].value + " ");
+            if (tokens[i].type === "token") {
+                if (tokens[i].token.label === "string") {
+                    result += `"${ tokens[i].value }"`;
+                } else if (tokens[i].token.type.label === "template") {
+                    result += tokens[i].token.value;
                 } else {
-                    result += (tokens[i].type.label);
+                    if (tokens[i].value) { 
+                        result += (tokens[i].value + " ");
+                    } else {
+                        result += (tokens[i].type.label);
+                    }
                 }
             }
         }
