@@ -47,7 +47,7 @@ var codeFormatter = {
                     } else if (tokens[i + 1].type === "comment") {
                         result += "\n";
                     } else if (tokens[i + 1].type === "token") {
-
+                        result += " ";
                     }
                 } else if (tokens[i].block === false) {
                     result += `//${tokens[i].comment}\n`
