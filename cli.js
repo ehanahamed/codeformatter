@@ -1,5 +1,15 @@
 #! /usr/bin/env node
 const fs = require("node:fs");
-const formaat = require("./main.js");
+const codeFormatter = require("./main.js");
 
-console.log(formaat.func());
+fs.readFile(
+  "./newtest.js",
+  "utf8",
+  function (error, data) {
+    if (error) {
+      console.error(error);
+    } else {
+      //console.log(codeFormatter.minify(data));
+    }
+  }
+)
