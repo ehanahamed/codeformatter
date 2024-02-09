@@ -21,12 +21,20 @@ var codeFormatter = {
         )
         return result;
     },
-    func: function (src) {
+    format: function (
+      src,
+      options
+    ) {
         result = "";
         var tokens = codeFormatter.parse(src);
         for (var i = 0; i < tokens.length; i++) {
             if (tokens[i].type === "token") {
                 if (tokens[i].token.type.label === "string") {
+                    if (tokens[i].token.value.includes("\n")) {
+                      console.log("uno");
+                    } else if (tokens[i].token.value.includes("\\n")) {
+                      console.log("dos");
+                    }
                     result += `"${ tokens[i].token.value }"`;
                 } else if (tokens[i].token.type.label === "template") {
                     result += tokens[i].token.value;
@@ -46,8 +54,16 @@ var codeFormatter = {
                         result += "\n";
                     } else if (tokens[i + 1].type === "comment") {
                         result += "\n";
-                    } else if (tokens[i + 1].type === "token") {
+                    } else if (
+                        tokens[i - 1].type === "token" &&
+                        tokens[i + 1].type === "token"
+                    ) {
                         result += " ";
+                    } else if (
+                        tokens[i - 1].type === "comment" &&
+                        tokens[i + 1].type === "token"
+                    ) {
+                        result += "\n";   
                     }
                 } else if (tokens[i].block === false) {
                     result += `//${tokens[i].comment}\n`
@@ -56,6 +72,28 @@ var codeFormatter = {
         }
         return result;
     },
+    minify: function (src) {
+      result = "";
+      var tokens = codeFormatter.parse(src);
+      for (var i = 0; i < tokens.length; i++) {
+        if (tokens[i].type === "token") {
+          if (tokens[i].token.type.label === "string") {
+            result += `"${ tokens[i].token.value }"`;
+          } else if (tokens[i].token.type.label === "template") {
+            result += tokens[i].token.value;
+          } else if (tokens[i].token.type.label === "eof") {
+            result += "\n";
+          } else {
+            if (tokens[i].token.value) { 
+                result += tokens[i].token.value;
+            } else {
+                result += tokens[i].token.type.label;
+            }
+          }
+        }
+      }
+      return result;
+    }
 }
 
 module.exports = codeFormatter;
