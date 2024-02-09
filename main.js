@@ -26,16 +26,31 @@ var codeFormatter = {
         var tokens = codeFormatter.parse(src);
         for (var i = 0; i < tokens.length; i++) {
             if (tokens[i].type === "token") {
-                if (tokens[i].token.label === "string") {
-                    result += `"${ tokens[i].value }"`;
+                if (tokens[i].token.type.label === "string") {
+                    result += `"${ tokens[i].token.value }"`;
                 } else if (tokens[i].token.type.label === "template") {
                     result += tokens[i].token.value;
+                } else if (tokens[i].token.type.label === "eof") {
+                    result += "\n";
                 } else {
-                    if (tokens[i].value) { 
-                        result += (tokens[i].value + " ");
+                    if (tokens[i].token.value) { 
+                        result += (tokens[i].token.value + " ");
                     } else {
-                        result += (tokens[i].type.label);
+                        result += (tokens[i].token.type.label);
                     }
+                }
+            } else if (tokens[i].type === "comment") {
+                if (tokens[i].block === true) {
+                    result += `/*${tokens[i].comment}*/`
+                    if (tokens[i].comment.contains("\n") {
+                        result += "\n";
+                    } else if (tokens[i + 1].type === "comment") {
+                        result += "\n";
+                    } else if (tokens[i + 1].type === "token") {
+                        
+                    }
+                } else if (tokens[i].block === false) {
+                    result += `//${tokens[i].comment}\n`
                 }
             }
         }
