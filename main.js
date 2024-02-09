@@ -42,7 +42,7 @@ var codeFormatter = {
             } else if (tokens[i].type === "comment") {
                 if (tokens[i].block === true) {
                     result += `/*${tokens[i].comment}*/`
-                    if (tokens[i].comment.contains("\n")) {
+                    if (tokens[i].comment.includes("\n")) {
                         result += "\n";
                     } else if (tokens[i + 1].type === "comment") {
                         result += "\n";
