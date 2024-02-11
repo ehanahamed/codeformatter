@@ -30,14 +30,15 @@ var codeFormatter = {
         for (var i = 0; i < tokens.length; i++) {
             if (tokens[i].type === "token") {
                 if (tokens[i].token.type.label === "string") {
-                    if (tokens[i].token.value.includes("\n")) {
-                      console.log("uno");
-                    } else if (tokens[i].token.value.includes("\\n")) {
-                      console.log("dos");
-                    }
-                    result += `"${ tokens[i].token.value }"`;
+                    var string = JSON.stringify(tokens[i].token.value).slice(1, -1);
+                    result += `"${ string }"`;
                 } else if (tokens[i].token.type.label === "template") {
+                  if (options.escapeTemplates === true) {
+                    var template = JSON.stringify(tokens[i].token.value).slice(1, -1);
+                    result += template;
+                  } else {
                     result += tokens[i].token.value;
+                  }
                 } else if (tokens[i].token.type.label === "eof") {
                     result += "\n";
                 } else {
