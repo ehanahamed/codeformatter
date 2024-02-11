@@ -18,36 +18,36 @@ for (var i = 2; i < process.argv.length; i++) {
 }
 if (helpFlag === true) {
   console.log(
-    "Code Formatter                                                                      \n" + 
+    "Code Formatter\n" + 
     "v0.0.1 (https://codeformatter.ehan.dev, https://github.com/ehanahamed/codeformatter)\n" +
-    "Ehan Ahamed, Evan Albaz, and Mason Safran                                           \n" +
-    "Usage:                                                                              \n" +
-    "  codeformatter ./path/to/file ./output/path --options                              \n" +
-    "  OR                                                                                \n" +
-    "  codeformatter ./path/to/file --overwrite --options                                \n" +
-    "  OR                                                                                \n" +
-    "  codeformatter ./path/to/file ./output/path --config ./config/path                 \n" +
-    "  OR                                                                                \n" +
-    "  codeformatter ./path/to/file --overwrite --config ./config.path                   \n" +
-    "Options:                                                                            \n" +
-    "  -v --version         display version                                              \n" +
-    "  -h --help            display help                                                 \n" +
-    "     --overwrite       overwrite input file(s)                                      \n" +
-    "     --format          pretty print source code          (default)                  \n" +
-    "  -m --minify          minify source code                                           \n" +
-    "  -c --config ./path   read options from config file                                \n" +
-    "     --doublequotes    use double quotes                 (default)                  \n" +
-    "     --singlequotes    use single quotes                                            \n" +
-    "     --indent n        indent with n spaces              (default: 2)               \n" +
-    "     --escapetemplates escape special chars in templates (default)                  \n" +
-    "     --keeptemplates   keep special chars in templates                              \n"
+    "Ehan Ahamed, Evan Albaz, and Mason Safran\n" +
+    "Usage:\n" +
+    "  codeformatter ./path/to/file ./output/path --options\n" +
+    "  OR\n" +
+    "  codeformatter ./path/to/file --overwrite --options\n" +
+    "  OR\n" +
+    "  codeformatter ./path/to/file ./output/path --config ./config/path\n" +
+    "  OR\n" +
+    "  codeformatter ./path/to/file --overwrite --config ./config.path\n" +
+    "Options:\n" +
+    "  -v --version         display version\n" +
+    "  -h --help            display help\n" +
+    "     --overwrite       overwrite input file(s)\n" +
+    "     --format          pretty print source code          (default)\n" +
+    "  -m --minify          minify source code\n" +
+    "  -c --config ./path   read options from config file\n" +
+    "     --doublequotes    use double quotes                 (default)\n" +
+    "     --singlequotes    use single quotes\n" +
+    "     --indent n        indent with n spaces              (default: 2)\n" +
+    "     --escapetemplates escape special chars in templates (default)\n" +
+    "     --keeptemplates   keep special chars in templates\n"
   );
 } else if (versionFlag === true) {
   console.log(
-    "Code Formatter                                                                      \n" + 
+    "Code Formatter\n" + 
     "v0.0.1 (https://codeformatter.ehan.dev, https://github.com/ehanahamed/codeformatter)\n" +
-    "Ehan Ahamed, Evan Albaz, and Mason Safran                                           \n" +
-    "See --help for more info                                                            \n"
+    "Ehan Ahamed, Evan Albaz, and Mason Safran\n" +
+    "See --help for more info\n"
   )
 } else {
   var srcPath = process.argv[2];
