@@ -53,6 +53,7 @@ if ((process.argv.length - 2) < 1) {
       "See --help for more info                                                            \n"
     )
   } else {
+    var srcPath = process.argv[2];
     var overwriteFlag = false;
     var minifyFlag = false;
     var configPath = false;
@@ -82,19 +83,30 @@ if ((process.argv.length - 2) < 1) {
         options.escapeTemplates = false;
       }
     }
-    if () {
-      
+    if (configPath) {
+      fs.readFile(
+        configPath,
+        "utf8",
+        function (error, data) {
+          if (error) {
+            console.error("Error while reading config file:\n" + error);
+          } else {
+            options = JSON.parse(data);
+          }
+        }
+      );
     }
     fs.readFile(
-      "./newtest.js",
+      srcPath,
       "utf8",
       function (error, data) {
         if (error) {
           console.error(error);
         } else {
-          console.log(codeFormatter.format(data, {
-            escapeTemplates: true
-          }));
+          console.log(codeFormatter.format(
+            data,
+            options
+          ));
         }
       }
     )
