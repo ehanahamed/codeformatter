@@ -9,7 +9,9 @@ fs.readFile(
     if (error) {
       console.error(error);
     } else {
-      //console.log(codeFormatter.minify(data));
+      console.log(codeFormatter.format(data, {
+        escapeTemplates: true
+      }));
     }
   }
 )
