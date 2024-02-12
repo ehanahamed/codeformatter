@@ -29,7 +29,9 @@ var codeFormatter = {
         var tokens = codeFormatter.parse(src);
         for (var i = 0; i < tokens.length; i++) {
             if (tokens[i].type === "token") {
-                if (tokens[i].token.type.label === "string") {
+                if (tokens[i].token.keyword) {
+                    result += tokens.token.value + " ";
+                } else if (tokens[i].token.type.label === "string") {
                     var string = JSON.stringify(tokens[i].token.value).slice(1, -1);
                     result += `"${ string }"`;
                 } else if (tokens[i].token.type.label === "template") {
@@ -78,7 +80,9 @@ var codeFormatter = {
       var tokens = codeFormatter.parse(src);
       for (var i = 0; i < tokens.length; i++) {
         if (tokens[i].type === "token") {
-          if (tokens[i].token.type.label === "string") {
+          if (tokens[i].token.keyword) {
+            result += tokens.token.value + " ";
+          } else if (tokens[i].token.type.label === "string") {
             result += `"${ tokens[i].token.value }"`;
           } else if (tokens[i].token.type.label === "template") {
             result += tokens[i].token.value;
