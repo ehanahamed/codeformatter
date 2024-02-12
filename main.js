@@ -35,11 +35,11 @@ var codeFormatter = {
                     var string = JSON.stringify(tokens[i].token.value).slice(1, -1);
                     result += `"${ string }"`;
                 } else if (tokens[i].token.type.label === "template") {
-                  if (options.escapeTemplates === true) {
+                  if (options.escapeTemplates === false) {
+                    result += tokens[i].token.value;
+                  } else {
                     var template = JSON.stringify(tokens[i].token.value).slice(1, -1);
                     result += template;
-                  } else {
-                    result += tokens[i].token.value;
                   }
                 } else if (tokens[i].token.type.label === "eof") {
                     result += "\n";
