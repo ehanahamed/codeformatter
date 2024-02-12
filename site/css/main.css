@@ -8,6 +8,8 @@ pre {
 
 pre code {
   display: block;
+  overflow-x: auto;
+  overflow-y: visible;
   background-color: var(--bg1Alt);
   border: 0.2rem solid var(--bg2);
   border-radius: 0.8rem;
