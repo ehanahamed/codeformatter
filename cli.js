@@ -22,7 +22,7 @@ for (var i = 2; i < process.argv.length; i++) {
 if (helpFlag === true) {
   console.log(
     "Code Formatter\n" + 
-    "v0.0.1 (https://codeformatter.ehan.dev, https://github.com/ehanahamed/codeformatter)\n" +
+    "v0.0.1 (https://ehan.dev/codeformatter, https://github.com/ehanahamed/codeformatter)\n" +
     "Ehan Ahamed, Evan Albaz, and Mason Safran\n" +
     "Usage:\n" +
     "  codeformatter ./path/to/file ./output/path --options\n" +
@@ -49,7 +49,7 @@ if (helpFlag === true) {
 } else if (versionFlag === true) {
   console.log(
     "Code Formatter\n" + 
-    "v0.0.1 (https://codeformatter.ehan.dev, https://github.com/ehanahamed/codeformatter)\n" +
+    "v0.0.1 (https://ehan.dev/codeformatter, https://github.com/ehanahamed/codeformatter)\n" +
     "Ehan Ahamed, Evan Albaz, and Mason Safran\n" +
     "See --help for more info\n"
   )
