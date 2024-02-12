@@ -1,0 +1,1002 @@
+[
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'string',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: 'token',
+start: 280,
+end: 287
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 287,
+end: 288
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'token',
+start: 289,
+end: 294
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 294,
+end: 295
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'token',
+start: 296,
+end: 301
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 301,
+end: 302
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ')',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 302,
+end: 303
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ';',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 303,
+end: 304
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 321,
+end: 322
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 322,
+end: 323
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'onComment',
+start: 340,
+end: 349
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 349,
+end: 350
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'function',
+keyword: 'function',
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'function',
+start: 351,
+end: 359
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '(',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 360,
+end: 361
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'block',
+start: 361,
+end: 366
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 366,
+end: 367
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'comment',
+start: 368,
+end: 375
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ')',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 375,
+end: 376
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '{',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 377,
+end: 378
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'result',
+start: 399,
+end: 405
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '.',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 405,
+end: 406
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'push',
+start: 406,
+end: 410
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '(',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 410,
+end: 411
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '{',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 411,
+end: 412
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'type',
+start: 437,
+end: 441
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 441,
+end: 442
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'string',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: 'comment',
+start: 443,
+end: 452
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 452,
+end: 453
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'block',
+start: 478,
+end: 483
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 483,
+end: 484
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'block',
+start: 485,
+end: 490
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 490,
+end: 491
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'comment',
+start: 516,
+end: 523
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 523,
+end: 524
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'comment',
+start: 525,
+end: 532
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 553,
+end: 554
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ')',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 554,
+end: 555
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ';',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 555,
+end: 556
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 573,
+end: 574
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 587,
+end: 588
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ')',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 597,
+end: 598
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'return',
+keyword: 'return',
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: 'return',
+start: 607,
+end: 613
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'result',
+start: 614,
+end: 620
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ';',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 620,
+end: 621
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '}',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 626,
+end: 627
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ',',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: null
+},
+value: undefined,
+start: 627,
+end: 628
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'name',
+keyword: undefined,
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'format',
+start: 633,
+end: 639
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: ':',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: false,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 639,
+end: 640
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: 'function',
+keyword: 'function',
+beforeExpr: false,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: 'function',
+start: 641,
+end: 649
+}
+},
+{
+type: 'token',
+token: Token {
+type: TokenType {
+label: '(',
+keyword: undefined,
+beforeExpr: true,
+startsExpr: true,
+isLoop: false,
+isAssign: false,
+prefix: false,
+postfix: false,
+binop: null,
+updateContext: [Function (anonymous)]
+},
+value: undefined,
+start: 650,
+end: 651
+}
+},
+]
