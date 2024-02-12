@@ -1,8 +1,11 @@
 {
   "name": "codeformatter",
   "version": "1.0.0",
-  "description": "A program that re-prints source code with consistent indentation, newlines, and stuff.",
+  "description": "A program that re-prints source code with consistent indentation, newlines, spacing, & more",
   "main": "main.js",
+  "bin": {
+    "codeformatter": "./cli.js"
+  },
   "scripts": {
     "bundle": "browserify ./site/demo.js -o ./site/demoBundle.js"
   },
