@@ -1,8 +1,10 @@
 # Code Formatter
 
-A program that re-prints source code with consistent indentation, newlines, and stuff.
+A program that re-prints source code with consistent indentation, newlines, spacing, and more.
 
-Written in JavaScript
+https://codeformatter.ehan.dev
+
+Ehan Ahamed, Evan Albaz, and Mason Safron
 
 ## Source Code
 
