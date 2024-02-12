@@ -4,7 +4,7 @@
   "description": "A program that re-prints source code with consistent indentation, newlines, and stuff.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "browserify ./site/demo.js -o ./site/demoBundle.js"
   },
   "author": "Ehan Ahamed",
   "license": "UPL-1.0",
