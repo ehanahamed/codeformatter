@@ -47,7 +47,7 @@
   </div>
   <main>
     <div class="demoMain">
-<pre><code class="language-javascript" contenteditable="true">function exampleFunc(exParam, exParam2) {
+<pre><code id="demoCode" class="language-javascript" contenteditable="true">function exampleFunc(exParam, exParam2) {
   anotherExampleFunc("a really really really really really really long string!");
 }
 </code></pre>
@@ -65,6 +65,14 @@
   <script src="./highlightjs/highlight.min.js"></script>
   <script>
     ehUi.setTheme("darker");
+    hljs.highlightAll();
+    document.getElementById("demoCode").addEventListener(
+      "focusout",
+      function() {
+        document.getElementById("demoCode").removeAttribute("data-highlighted");
+        hljs.highlightAll();
+      }
+    )
   </script>
 </body>
 </html>
