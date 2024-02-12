@@ -10,5 +10,8 @@
   "license": "UPL-1.0",
   "dependencies": {
     "acorn": "^8.11.3"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
   }
 }
