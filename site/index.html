@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./ehui/css/components.css">
   <link rel="stylesheet" href="./ehui/css/layouts.css">
   <link rel="stylesheet" href="./ehui/css/utils.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./highlightjs/tokyo-night-dark.min.css">
   <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
 </head>
 
@@ -44,9 +46,12 @@
     </div>
   </div>
   <main>
-    <div class="grid split noBorder">
-      <div class="left">e</div>
-      <div class="right">e</div>
+    <div class="demoMain">
+<pre><code class="language-javascript" contenteditable="true">function exampleFunc(exParam, exParam2) {
+  anotherExampleFunc("a really really really really really really long string!");
+}
+</code></pre>
+      <button id="buttonFormat">Format</button>
     </div>
   </main>
   <footer>
@@ -57,5 +62,9 @@
     </a>
   </footer>
   <script src="./ehui/js/ehUi.js"></script>
+  <script src="./highlightjs/highlight.min.js"></script>
+  <script>
+    ehUi.setTheme("darker");
+  </script>
 </body>
 </html>
