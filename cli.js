@@ -4,6 +4,7 @@ const codeFormatter = require("./main.js");
 
 var helpFlag = false;
 var versionFlag = false;
+var debugFlag = false;
 
 if ((process.argv.length - 2) < 1) {
   helpFlag = true;
@@ -14,6 +15,8 @@ for (var i = 2; i < process.argv.length; i++) {
     helpFlag = true;
   } else if ((process.argv[i] == "-v") || (process.argv[i] == "--version")) {
     versionFlag = true
+  } else if (process.argv[i] == "--debug") {
+    debugFlag = true
   }
 }
 if (helpFlag === true) {
@@ -35,6 +38,7 @@ if (helpFlag === true) {
     "     --overwrite       overwrite input file(s)\n" +
     "     --format          pretty print source code          (default)\n" +
     "  -m --minify          minify source code\n" +
+    "     --debug           log parsed AST tree\n" +
     "  -c --config ./path   read options from config file\n" +
     "     --doublequotes    use double quotes                 (default)\n" +
     "     --singlequotes    use single quotes\n" +
@@ -48,6 +52,25 @@ if (helpFlag === true) {
     "v0.0.1 (https://codeformatter.ehan.dev, https://github.com/ehanahamed/codeformatter)\n" +
     "Ehan Ahamed, Evan Albaz, and Mason Safran\n" +
     "See --help for more info\n"
+  )
+} else if (debugFlag === true) {
+  fs.readFile(
+    process.argv[2],
+    "utf8",
+    function (error, data) {
+      if (error) {
+        console.error(error);
+      } else {
+        console.dir(
+          codeFormatter.parse(
+            data
+          ),
+          {
+            depth: 20
+          }
+        );
+      }
+    }
   )
 } else {
   var srcPath = process.argv[2];
