@@ -29,7 +29,7 @@ var codeFormatter = {
         var tokens = codeFormatter.parse(src);
         for (var i = 0; i < tokens.length; i++) {
             if (tokens[i].type === "token") {
-                if (tokens[i].token.keyword) {
+                if (tokens[i].token.type.keyword) {
                     result += tokens.token.value + " ";
                 } else if (tokens[i].token.type.label === "string") {
                     var string = JSON.stringify(tokens[i].token.value).slice(1, -1);
@@ -80,7 +80,7 @@ var codeFormatter = {
       var tokens = codeFormatter.parse(src);
       for (var i = 0; i < tokens.length; i++) {
         if (tokens[i].type === "token") {
-          if (tokens[i].token.keyword) {
+          if (tokens[i].token.type.keyword) {
             result += tokens.token.value + " ";
           } else if (tokens[i].token.type.label === "string") {
             result += `"${ tokens[i].token.value }"`;
