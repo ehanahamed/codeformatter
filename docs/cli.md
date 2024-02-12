@@ -55,8 +55,8 @@ $ codeformatter ./src.js ./output.js --config ./config.json
 
 ```jsonc
 {
-    "indent": 2, /* number of spaces */
-    "quotes": "double", 
-    "escapeTemplates": false
+    "indent": 2, /* number of spaces to indent with, default is 2 */
+    "quotes": "double", /* "double" or "single", default is "double" */
+    "escapeTemplates": false /* boolean, default is false */
 }
 ```
