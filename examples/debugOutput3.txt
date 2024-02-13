@@ -1,0 +1,302 @@
+[
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'function',
+        keyword: 'function',
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: 'function',
+      start: 0,
+      end: 8
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'name',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: 'exampleFunc',
+      start: 9,
+      end: 20
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: '(',
+        keyword: undefined,
+        beforeExpr: true,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 20,
+      end: 21
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'name',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: 'exParam',
+      start: 21,
+      end: 28
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: ',',
+        keyword: undefined,
+        beforeExpr: true,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: null
+      },
+      value: undefined,
+      start: 28,
+      end: 29
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'name',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: 'exParam2',
+      start: 30,
+      end: 38
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: ')',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 38,
+      end: 39
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: '{',
+        keyword: undefined,
+        beforeExpr: true,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 40,
+      end: 41
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'name',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: 'anotherExampleFunc',
+      start: 44,
+      end: 62
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: '(',
+        keyword: undefined,
+        beforeExpr: true,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 62,
+      end: 63
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'string',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: true,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: null
+      },
+      value: 'a really really really really really really long string!',
+      start: 63,
+      end: 121
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: ')',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 121,
+      end: 122
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: ';',
+        keyword: undefined,
+        beforeExpr: true,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: null
+      },
+      value: undefined,
+      start: 122,
+      end: 123
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: '}',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: [Function (anonymous)]
+      },
+      value: undefined,
+      start: 124,
+      end: 125
+    }
+  },
+  {
+    type: 'token',
+    token: Token {
+      type: TokenType {
+        label: 'eof',
+        keyword: undefined,
+        beforeExpr: false,
+        startsExpr: false,
+        isLoop: false,
+        isAssign: false,
+        prefix: false,
+        postfix: false,
+        binop: null,
+        updateContext: null
+      },
+      value: undefined,
+      start: 126,
+      end: 126
+    }
+  }
+]
